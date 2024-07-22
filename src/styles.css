@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#app {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    overflow: auto;
+}
+
+#data-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.category h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.countries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.country {
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e0f7fa;
+    color: white;
+    width: calc(50% - 10px); 
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.country .value {
+    background-color: #00acc1; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+
+.country .name {
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.category.men .country {
+    background-color: #e0f7fa;
+}
+
+.category.men .country .value {
+    background-color: #00acc1;
+}
+
+.category.men .country .name {
+    color: #007c91; 
+}
+
+.category.women .country {
+    background-color: #f3e5f5;
+}
+
+.category.women .country .value {
+    background-color: #8e24aa;
+}
+
+.category.women .country .name {
+    color: #6a1b9a; 
+}
+
+.category.youth .country {
+    background-color: #e3f2fd;
+}
+
+.category.youth .country .value {
+    background-color: #1e88e5;
+}
+
+.category.youth .country .name {
+    color: #1565c0;
+}
+
+@media (max-width: 768px) {
+    #data-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .country {
+        width: 100%;
+    }
+}
