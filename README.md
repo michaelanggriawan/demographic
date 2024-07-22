@@ -31,20 +31,13 @@ Make sure you have the following installed on your system:
 
    ```sh
    git clone https://github.com/michaelanggriawan/weather-map.git
-   cd weather-app
    ```
 2. **Install the dependencies:**
 
    ```sh
    npm install
    ```
-
-3. **Set up your OpenWeatherMap API key:**
-    ```sh
-    const apiKey = 'YOUR_API_KEY_HERE'; // Replace with your OpenWeatherMap API key
-    ```
-
-4. **Start the development server with hot-reloading:**
+3. **Start the development server with hot-reloading:**
     ```sh
     http://localhost:9000
     ```
