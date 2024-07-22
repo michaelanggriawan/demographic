@@ -37,7 +37,12 @@ Make sure you have the following installed on your system:
    ```sh
    npm install
    ```
-3. **Start the development server with hot-reloading:**
+3. **Run the app:**
+    ```sh
+    npm start
+    ```
+
+4. **Start the development server with hot-reloading:**
     ```sh
     http://localhost:9000
     ```
